@@ -1,32 +1,35 @@
-Assume we have the databases below.  Write queries to answer each of the questions below.  We understand different databases have slightly different T-SQL syntax, please specify the version of SQL you are writing. 
+Assume we have the database tables below.  Write queries to answer each of the questions.  We understand different databases have slightly different T-SQL syntax, please specify the version of SQL you are writing. It's ok for you to lookup syntax online while you work on this, but we don't expect you to spend more than 20-30 minutes total on this, please submit whatever you finish in 30 minutes.
 
-employees
+__employees__
 
-id 	name	start_date	end_date	department
-1	Bob	1/1/2018	3/15/2020	Sales
-2	Alice	4/15/2018	7/20/2020	Engineering
-3	Sue	5/1/2018	 	Marketing
-4	Jane	2/5/2019	 	Engineering
-...	...	...	...	...
+| id | name | start_date | end_date | department |
+| --- | --- | --- | --- | --- |
+| 1	| Bob	| 1/1/2018	| 3/15/2020	 | Sales |
+| 2	| Alice	| 4/15/2018 |	7/20/2020 |	Engineering |
+| 3	| Sue	| 5/1/2018	|	Marketing |
+| 4 |	Jane	| 2/5/2019 |	Engineering |
+| ... |	... |	... |	... |	... |
  
 
-management_relations
+__management_relations__
 
-id	manager_id	employee_id
-1	1	2
-2	1	3
-3	4	1
-...	...	...
+| id	| manager_id	| employee_id |
+| --- | --- | --- |
+| 1	| 1	| 2 |
+| 2	| 1	| 3 |
+| 3	| 4	| 1 |
+| ...	| ...	| ... |
  
 
-employee_reviews
+__employee_reviews__
 
-id	employee_id	year	quarter	rating
-1	1	2018	1	4
-2	1	2018	2	5
-3	2	2018	2	4
-4	3	2018	2	3
-...	...	...	...	...
+| id | employee_id | year | quarter | rating |
+| --- | --- | --- | --- | --- |
+| 1	| 1	| 2018	| 1	| 4 |
+| 2	| 1	| 2018	| 2	| 5 |
+| 3	| 2	| 2018	| 2	| 4 |
+| 4	| 3	| 2018	| 2	| 3 |
+| ... |	... |	... |	... |	... |
 
 
 1) Show me everyone in engineering.
@@ -40,8 +43,9 @@ id	employee_id	year	quarter	rating
 5) What are the names of all the managers along with their team size and average employee rating given out?  #=> [manager_name, managed_employee_count, average_rating]
 
 Note: you may find the following tool helpful for testing your answers: http://sqlfiddle.com/
-If you use this tooli (mysql) you can create the tables above by pasting this script in:
+If you use this tool (mysql) you can create the tables above by pasting this script in:
 
+```SQL
 create table employees (
     id serial primary key,
     name text,
@@ -80,6 +84,6 @@ insert into employee_reviews (employee_id, year, quarter, rating) values
 (1,2018,2,5),
 (2,2018,2,4),
 (3,2018,2,3);
- 
+``` 
  
 
