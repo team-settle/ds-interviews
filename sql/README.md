@@ -32,17 +32,17 @@ __employee_reviews__
 | ... |	... |	... |	... |	... |
 
 
-1) Show me everyone in engineering.
+1) Show me everyone in engineering. #=> [id, name, start_date, end_date]
 
-2) How many people currently work in each department?
+2) How many people *currently* work in each department? #=> [department, count]
 
-3) Which employee has worked the longest for the company?
+3) Which employee has worked the longest for the company? #=> [id, name]
 
-4) Which active employees are the longest-tenured (most time working) for each department?
+4) Which active employee is the longest-tenured (most time working) for each department? #=> [id, name, department]
 
 5) What are the names of all the managers along with their team size and average employee rating given out?  #=> [manager_name, managed_employee_count, average_rating]
 
-Note: you may find the following tool helpful for testing your answers: http://sqlfiddle.com/
+Note: you may find the following tool helpful for testing the output of your SQL: http://sqlfiddle.com/
 If you use this tool (mysql) you can create the tables above by pasting this script in:
 
 ```SQL
