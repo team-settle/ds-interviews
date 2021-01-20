@@ -54,11 +54,11 @@ create table employees (
     department text
 );
 
-insert into employees (name, start_date, end_date, department) values 
-('Bob', '1/1/2018', '3/15/2020', 'Sales'),
-('Alice', '4/15/2018', '7/20/2020', 'Engineering'),
-('Sue', '5/1/2018', NULL, 'Marketing'),
-('Jane', '2/5/2019', NULL, 'Engineering');
+insert into employees (name, start_date, end_date, department) values
+('Bob', '2018-01-01', '2020-03-15', 'Sales'),
+('Alice', '2018-04-15', '2020-07-20', 'Engineering'),
+('Sue', '2018-05-01', NULL, 'Marketing'),
+('Jane', '2019-02-05', NULL, 'Engineering');
 
 create table management_relations (
     id serial primary key,
