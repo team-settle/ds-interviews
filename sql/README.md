@@ -6,8 +6,8 @@ __employees__
 | --- | --- | --- | --- | --- |
 | 1	| Bob	| 1/1/2018	| 3/15/2020	 | Sales |
 | 2	| Alice	| 4/15/2018 |	7/20/2020 |	Engineering |
-| 3	| Sue	| 5/1/2018	|	Marketing |
-| 4 |	Jane	| 2/5/2019 |	Engineering |
+| 3	| Sue	| 5/1/2018	||	Marketing |
+| 4 |	Jane	| 2/5/2019 ||	Engineering |
 | ... |	... |	... |	... |	... |
  
 
