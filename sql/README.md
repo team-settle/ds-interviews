@@ -43,7 +43,7 @@ __employee_reviews__
 5) What are the names of all the managers along with their team size and average employee rating given out?  #=> [manager_name, managed_employee_count, average_rating]
 
 Note: you may find the following tool helpful for testing the output of your SQL: http://sqlfiddle.com/
-If you use this tool (mysql) you can create the tables above by pasting this script in:
+If you use this tool you can create the tables above by pasting this script in (note this script is for mysql, might need to tweak for other sql flavors):
 
 ```SQL
 create table employees (
